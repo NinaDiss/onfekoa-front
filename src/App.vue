@@ -1,11 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ActivitiesList from './features/ActivitiesList/ActivitiesList.vue'
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
-</template>
+  <h1>Bienvenue sur Onfekoa !</h1>
 
-<style scoped></style>
+  <ActivitiesList />
+</template>

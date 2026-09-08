@@ -55,4 +55,6 @@ export const vueRules: Linter.RulesRecord = {
   // this override is still needed because import/no-default-export
   // (set to 'error' globally) would otherwise flag .vue files.
   'import/no-default-export': 'off',
+
+  'vue/multi-word-component-names': 'off',
 }
