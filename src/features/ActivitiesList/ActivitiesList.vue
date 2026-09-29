@@ -21,10 +21,20 @@ import activities from '../../../activities-list-temporary.json'
   </div>
 </template>
 
-<style>
+<style lang="scss">
+@use '../../styles/breakpoints';
+
 .cards_wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 16px;
+
+  @media #{breakpoints.$lg-and-up} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media #{breakpoints.$xl} {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 </style>

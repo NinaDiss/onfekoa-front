@@ -1,0 +1,23 @@
+@use 'sass:map';
+
+$breakpoints: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1400px,
+);
+
+$xs: '(max-width: #{map.get($breakpoints, 'sm')})';
+$sm-and-down: '(max-width: #{map.get($breakpoints, 'md')})';
+$sm-and-up: '(min-width: #{map.get($breakpoints, 'sm')})';
+$sm: '#{$sm-and-up} and #{$sm-and-down}';
+
+$md-and-down: '(max-width: #{map.get($breakpoints, 'lg')})';
+$md-and-up: '(min-width: #{map.get($breakpoints, 'md')})';
+$md: '#{$md-and-up} and #{$md-and-down}';
+
+$lg-and-down: '(max-width: #{map.get($breakpoints, 'xl')})';
+$lg-and-up: '(min-width: #{map.get($breakpoints, 'lg')})';
+$lg: '#{$lg-and-up} and #{$lg-and-down}';
+
+$xl: '(min-width: #{map.get($breakpoints, 'xl')})';

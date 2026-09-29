@@ -14,7 +14,7 @@ defineProps<{
 </script>
 
 <template>
-  <Card>
+  <Card class="activity-card">
     <template #default>
       <h2>{{ title }}</h2>
       <img v-if="image" :src="image" alt="" />
@@ -27,3 +27,9 @@ defineProps<{
     </template>
   </Card>
 </template>
+
+<style lang="scss">
+.activity-card {
+  max-width: 400px;
+}
+</style>
